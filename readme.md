@@ -4,7 +4,7 @@ If the root directory is Sustainable Brands , use  "npm install"
 2. change the directory to backendapp , and install the packages 
   cmd:         cd backendapp
                npm install
-3. Go back to Sustainable Brands  
+3. Go back to root directory 
   cmd:           cd ../
 4. Change directory to myapp (front-end react code) and install packages
  cmd:           cd myapp
