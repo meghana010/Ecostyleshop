@@ -1,13 +1,6 @@
 const Adata = {
     allItems: [
-        {
-            id: 28,
-            name: "Pact",
-            category: "Pajamas",
-            gender: "Women",
-            cover: "./images/Pact/womens pajamas/1.jpg",
-            price:10,
-          },
+       
           {
             id: 29,
             name: "Pact",
