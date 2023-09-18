@@ -1,5 +1,5 @@
 Steps to execute :
-1. After unzipping the file , donot forgot to install all the packages used .
+1. After downloading the folder , donot forgot to install all the packages used .
 If the root directory is Sustainable Brands , use  "npm install"
 2. change the directory to backendapp , and install the packages 
   cmd:         cd backendapp
