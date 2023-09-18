@@ -10,7 +10,7 @@ function PurchaseHistory({ purchaseHistory,setPurchaseHistory }) {
 if(loggedInEmail)
 {
   axios
-  .get(`http://localhost:5000/purchase-history?email=${loggedInEmail}`)
+  .get(`/api/purchase-history?email=${loggedInEmail}`)
   .then((response) => {
     setPurchaseHistory(response.data);
   })
