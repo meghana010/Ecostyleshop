@@ -5,7 +5,7 @@ const Adata = {
             name: "Pact",
             category: "Pajamas",
             gender: "Women",
-            cover: "./images/Pact/womens pajamas/2.jpg",
+            cover: "./images/Pact/womens pajamas/1.jpg",
             price:10,
           },
           {
@@ -13,7 +13,7 @@ const Adata = {
             name: "Pact",
             category: "Pajamas",
             gender: "Women",
-            cover: "./images/PAct/womens pajamas/1.jpg",
+            cover: "./images/pact/womens pajamas/1.jpg",
             price:10,
           },
         {
@@ -29,7 +29,7 @@ const Adata = {
             name: "Pact",
             category: "Pajamas",
             gender: "Women",
-            cover: "./images/PAct/womens pajamas/3.jpg",
+            cover: "./images/pact/womens pajamas/1.jpg",
             price:10,
           },
         {
@@ -37,7 +37,7 @@ const Adata = {
             name: "Patagonia",
             category: "Sweater",
             gender: "Women",
-            cover: "./images/PATAGONIA/womens sweater/2.jpg",
+            cover: "./images/quince/women cardigan/2.jpg",
             price:10,
           },
           {
@@ -45,7 +45,7 @@ const Adata = {
             name: "Pact",
             category: "Pajamas",
             gender: "Women",
-            cover: "./images/PAct/womens pajamas/5.jpg",
+            cover: "./images/pact/womens pajamas/1.jpg",
             price:10,
           },
         {
@@ -53,7 +53,7 @@ const Adata = {
             name: "Patagonia",
             category: "Sweater",
             gender: "Women",
-            cover: "./images/PATAGONIA/womens sweater/1.jpg",
+            cover:  "./images/quince/women cardigan/1.jpg",
             price:10,
           },
   
@@ -78,7 +78,7 @@ const Adata = {
         name: "Patagonia",
         category: "Sweater",
         gender: "Women",
-        cover: "./images/PATAGONIA/womens sweater/3.jpg",
+        cover: "./images/quince/women cardigan/3.jpg",
         price:10,
       },
       {
@@ -102,7 +102,7 @@ const Adata = {
         name: "Patagonia",
         category: "Sweater",
         gender: "Women",
-        cover: "./images/PATAGONIA/womens sweater/4.jpg",
+        cover:  "./images/quince/women cardigan/2.jpg",
         price:10,
       },
       {
@@ -118,7 +118,7 @@ const Adata = {
         name: "Patagonia",
         category: "Sweater",
         gender: "Women",
-        cover: "./images/PATAGONIA/womens sweater/5.jpg",
+        cover: "./images/quince/women cardigan/5.jpg",
         price:10,
       },
       {
@@ -279,7 +279,7 @@ const Adata = {
         name: "Patagonia",
         category: "T-shirt",
         gender: "Women",
-        cover: "./images/PATAGONIA/womens T shirt/1.jpg",
+        cover: "./images/pact/womens T shirt/1.jpg",
         price:10,
       },
       {
@@ -303,7 +303,7 @@ const Adata = {
         name: "Patagonia",
         category: "T-shirt",
         gender: "Women",
-        cover: "./images/PATAGONIA/womens T shirt/1.jpg",
+        cover: "./images/pact/womens T shirt/1.jpg",
         price:10,
       },
       {
@@ -335,14 +335,14 @@ const Adata = {
         name: "Patagonia",
         category: "T-shirt",
         gender: "Women",
-        cover: "./images/PATAGONIA/womens T shirt/2.jpg",
+        cover: "./images/pact/womens T shirt/2.jpg",
         price:10,
       },{
         id: 26,
         name: "Patagonia",
         category: "T-shirt",
         gender: "Women",
-        cover: "./images/PATAGONIA/womens T shirt/3.jpg",
+        cover: "./images/pact/womens T shirt/3.jpg",
         price:10,
       },
       {
