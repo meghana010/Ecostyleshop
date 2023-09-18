@@ -16,7 +16,7 @@ connection URL ---  mongodb://0.0.0.0:27017/react  ............
     Donot forget to run mongod in windows Powershell.
 7. Run the command 
  cmd:       concurrently "npm run start-frontend" "npm run start-backend"
-8. Both front-end and back-end will run on different ports 3000 and 5000 make sure theya re not engaged.
+8. Both front-end and back-end will run on different ports 3000 and 5000 make sure they are not engaged.
 
 
 Register before you login
