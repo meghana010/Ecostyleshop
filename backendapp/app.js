@@ -52,13 +52,13 @@ const productSchema = new mongoose.Schema({
   cover: String, 
   quantity: Number,
 });
-app.get("/", cors(), (req, res) => {
+app.get("/api/", cors(), (req, res) => {
   
 });
 function generateCollectionName(email) {
   return `${email.replace("@", "_").replace(".", "_")}`;
 }
-app.post("/", async (req, res) => {
+app.post("/api/", async (req, res) => {
   const { email, password } = req.body;
   try {
     const check = await User.findOne({ email: email, password: password });
@@ -69,7 +69,7 @@ app.post("/", async (req, res) => {
         email: email
       };
       
-      app.post(`/purchase-history`, (req, res) => {
+      app.post(`/api/purchase-history`, (req, res) => {
         const purchaseItems = req.body;
         const PurchaseHistory = mongoose.model(`PurchaseHistory`, productSchema, `PurchaseHistory`);
         const options = { ordered: false }; // Set ordered to false to avoid errors for existing documents
@@ -93,7 +93,7 @@ app.post("/", async (req, res) => {
       
  
  
-  app.get(`/purchase-history`, (req, res) => {
+  app.get(`/api/purchase-history`, (req, res) => {
     const loggedInEmail = req.query.email;
     const PurchaseHistory = mongoose.model(`PurchaseHistory`, productSchema,`PurchaseHistory`);
     PurchaseHistory.find({email: loggedInEmail }, (err, purchaseHistory) => {
@@ -106,7 +106,7 @@ app.post("/", async (req, res) => {
     });
   });
  
-  app.post(`/add-to-cart`, (req, res) => {
+  app.post(`/api/add-to-cart`, (req, res) => {
     //const userEmail = req.session.user.email;
     const { item,email } = req.body;
      const Cart = mongoose.model(`Cart`, productSchema,`Cart`);
@@ -120,7 +120,7 @@ app.post("/", async (req, res) => {
       }
     });
   });
-  app.get(`/cart`, (req, res) => {
+  app.get(`/api/cart`, (req, res) => {
     //const userEmail = req.session.user.email;
     const loggedInEmail = req.query.email;
     const Cart = mongoose.model(`Cart`, productSchema,`Cart`);
@@ -134,7 +134,7 @@ app.post("/", async (req, res) => {
     });
   });
   
-  app.post(`/remove-from-cart`, (req, res) => {
+  app.post(`/api/remove-from-cart`, (req, res) => {
     //const userEmail = req.session.user.email;
     const { productId,email } = req.body;
    const Cart = mongoose.model(`Cart`, productSchema,`Cart`);
@@ -148,7 +148,7 @@ app.post("/", async (req, res) => {
     });
   });
   
-  app.post('/update-cart-quantity', async (req, res) => {
+  app.post('/api/update-cart-quantity', async (req, res) => {
     try {
       const { productId, quantity,email } = req.body;
       const Cart = mongoose.model(`Cart`, productSchema,`Cart`);
@@ -170,7 +170,7 @@ app.post("/", async (req, res) => {
   });
   
   
-  app.post(`/update-cart-item`, (req, res) => {
+  app.post(`/api/update-cart-item`, (req, res) => {
     //const userEmail = req.session.user.email;
     const { item ,email} = req.body; 
     const Cart = mongoose.model(`Cart`, productSchema,`Cart`);
@@ -190,7 +190,7 @@ app.post("/", async (req, res) => {
   });
 
 
-  app.post("/logout", (req, res) => {
+  app.post("/api/logout", (req, res) => {
     req.session.destroy((err) => {
       if (err) {
         console.error("Logout Error:", err);
@@ -217,7 +217,7 @@ app.post("/", async (req, res) => {
 });
 
 
-app.post("/signup", async (req, res) => {
+app.post("/api/signup", async (req, res) => {
   const { email, password } = req.body;
   const userData = {
     email: email,
