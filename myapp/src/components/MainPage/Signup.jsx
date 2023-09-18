@@ -48,7 +48,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("/api/signup", {
+      const response = await axios.post("http://localhost:5000/signup", {
         email,
         password,
       });
